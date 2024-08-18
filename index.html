@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo_head">a</h1>
+    </header>
+    <main class="main">
+
+        <div class="contenido_input">
+            <input type="text" id="input" placeholder="Introduce tu texto a encriptar/desencriptar aquí">
+        </div>
+
+        <div class="contenido_caja">
+            <p id="contenido_caja_texto">Aquí va a aparecer el texto encriptado/desencriptado cuando oprimas el botón</p>
+            <img src="assets/GIF/persona-futaba.gif" alt="Tecleando">
+        </div>
+
+        <div class="botones">
+            <button id="boton_encriptar" onclick="encriptar()">Encriptar</button>
+            <button id="boton_desencriptar" onclick="desencriptar()">Desencriptar</button>
+            <button id="boton_copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>
