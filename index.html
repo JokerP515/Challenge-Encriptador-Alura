@@ -8,27 +8,32 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="logo_head">a</h1>
+        <a>
+            <img class="logo" src="/assets/IMG/Vector.png" alt="Logo Alura">
+        </a>
     </header>
     <main class="main">
+        <div class="container">
+            <div class="zonaEncriptado">
+                <div class="escribir">
+                    <textarea type="text" id="input" placeholder="Introduce tu texto a encriptar/desencriptar aquí"></textarea>
+                </div>
 
-        <div class="contenido_input">
-            <input type="text" id="input" placeholder="Introduce tu texto a encriptar/desencriptar aquí">
-        </div>
+                <div class="mostrar">
+                    <p id="resultadoTexto">Aquí va a aparecer el texto encriptado/desencriptado cuando oprimas el botón</p>
+                    <img id="gif" src="assets/GIF/persona-futaba.gif" alt="Tecleando">
+                </div>
 
-        <div class="contenido_caja">
-            <p id="contenido_caja_texto">Aquí va a aparecer el texto encriptado/desencriptado cuando oprimas el botón</p>
-            <img src="assets/GIF/persona-futaba.gif" alt="Tecleando">
-        </div>
-
-        <div class="botones">
-            <button id="boton_encriptar" onclick="encriptar()">Encriptar</button>
-            <button id="boton_desencriptar" onclick="desencriptar()">Desencriptar</button>
-            <button id="boton_copiar" onclick="copiarTexto()">Copiar</button>
+                <div class="botones">
+                    <button id="encriptar" onclick="encriptar()">Encriptar</button>
+                    <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                    <button id="copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
         </div>
     </main>
 
-    <script src="app.js"></script>
+    <script src="/js/app.js"></script>
 
 
 </body>
